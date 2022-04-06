@@ -1,0 +1,1612 @@
+1- Lembre como peças:
+palavras entre aspas
+e parenteses na função
+
+print ('ola mundo')
+
+Numeros não estão entre aspas
+
+print (7+4)
+
+Se fizeres assim:
+
+print('7'+'4') 
+
+Irá juntar as duas mensagens 
+
+= 74
+
+2 - Inserir variaveis
+
+1.1: Variáveis
+1.1.1: Atribuição de Variáveis
+
+As variáveis são as mesmas que as variáveis em matemática, exceto que variáveis matemáticas são muitas vezes letras, mas variáveis de programação podem ser palavras.
+
+Variáveis: um conjunto que contém algumas informações.
+
+Nota sobre a declaração de variáveis:
+
+    Case-sensitive (ou seja, caracteres em caixa alta ou baixa são tratados como diferentes)
+    DEVE começar com uma letra ou um sublinhado; NÃO PODE começar com números.
+    NÃO PODE ser o mesmo nome que as palavras-chave Python (por exemplo, class, finally, etc.)
+    NÃO especificar o tipo de informação armazenada na variável. (Consulte os seguintes códigos para um exemplo.)
+
+# Exemplos de declarações de variáveis
+width = 10
+
+# Note que o "H" está em letra maiúscula
+Height = 5
+
+area = 0
+
+
+
+nome = 
+idade = 
+peso = 
+print(nome,idade,peso)
+
+3- perguntar - interatividade
+nome = input('qual seu nome?')
+idade = input ('qual sua idade?')
+peso = input ('qual seu nome?')
+print (nome, idade, peso)
+
+4- explicar o .format
+
+5. variavel pedaço da memoria do computador
+
+6. Sinal de igual é igual a receber
+
+7. print ('a soma vale',s)
+
+8. Tipos primitivos
+int : numeros inteiros (-3, 2)
+float : numeros decimais (4.5, 0.076)
+bool: True, Falta
+str:palavras ('olá')
+
+9. função type()
+
+10. Format:
+estilo
+n1 = 10
+print('a entrada foi {}.format(n1))
+
+11. algebra
++ soma 
+- subtração	
+* multiplicação
+/ divisão
+** exponenciação
+// divisão inteira
+% modulo, resto da divisão
+
+12 Ordem
+() primeiro resolvido
+** potencias
+*,/,// todas outras
++,- outras artmeticas 
+
+ex: 5+3*2
+3*5+4**22
+
+'Oi' + 'Ola'
+OiOla
+
+'Oi' * 5
+OiOiOiOiOi
+
+13
+:10 = 10 espaços contabilizados no codigo
+.3f = conta tres caracterres
+> = alinhamento para a esquerda
+< = Alinhado a direita
+^ = Centralizado
+
+14. codigos de formatação
+\n quebra de linha
+end='' nao adicionar nada ao fim
+
+15. PACOTES
+import(pacote)
+
+from(pacote)import(subpacote)
+
+Ex.
+math:
+ceil - arredonda pra cima
+floor - arredonda pra baixo
+sqrt - raiz quadrada
+factorial - fatorial
+trunc - truncar numero remover ponto
+hypot - hipotenusa
+
+import math^^
+from math import sqrt
+
+import random
+random.randon() - chama um numero aleatorio
+randon.randint() - chama numero inteiros
+random.choice() - chama um numero de uma lista
+
+16.
+[] criar uma lista de nomes : lista entre colchetes
+
+17. Manipulando texto 
+frase = 'Curso em video Python'
+começando em zero
+
+frase[9]
+A Décima letra
+Python separa maiusculas de minusculas
+
+frase[9:13] - Ele exclui o ultimo caractere
+'Vide'
+
+frase[9:21:2]
+pulando de dois em dois
+
+frase[:5]
+do inicio até o cinco
+
+frase[15:]
+do 15 ao final
+
+frase[9::3]
+do nove ao fim, pulando de 3 em 3
+
+18. Analisando a String
+positivos
+texto = ''python s2''
+positivos[012345678]  
+negativos[987654321] #sinal negativo
+
+texto[inicio:fim]
+
+
+len(frase)
+tamanho da string
+
+frase.count('o')
+contando quantidade de O
+
+frase.count('o', 0, 13)
+contar do zero ao treze
+
+frase
+frase.find('deo)
+diz onde começa a string 
+
+frase.find('android')
+recebe -1
+
+'curso' in frase
+true ou false
+se existe ou nao 
+
+frase.replace
+('python','Android')
+Substitui um pelo outro
+
+frase.upper()
+é um metodo
+maiusculo tudo
+
+frase.lower()
+minusculo tudo
+
+frase.capitalize()
+só a primeira letra maiusculas
+
+frase.title()
+todas frases maiusculas
+
+frase.strip()
+remove espaços no inicio e no fim
+
+frase.rstrip()
+variação r tratar pela direita apenas
+
+frase.lstrip()
+variação l trata pela esquerda apenas
+
+frase.split()
+estudar
+divide as frases por espaços
+gera uma nova lista por numeros 
+ex. curso em video python
+0,1,2,3
+
+juntar 
+'-'.join(frase)
+junta todos os elementos
+
+printar textos grandes
+print("""ajsaiasjasidfahsdahduaihsduaishduahsduaihsdu""")
+tres aspas
+
+nas listas o -1 e o ultimo indice da mesma Ex. [ 'a', 'b', 'c'] vai do indice 0 ao 2 ou vai do indice -3 ao -1
+
+for letra in texto
+	print(letra)
+
+19. Aula de condições
+estrutura sequencial
+
+Todo Operador Relacional (== ; != ; > ; < ; >= ; <=) retorna valor bool
+
+
+Operador Logico (and, or, in, not in) também retorna valor bool
+
+Todas as vezes
+Se
+	Indentação
+senão
+	Indentação
+	
+Se (If) isto(condição):
+	Bloco verdadeiro
+senão (else)
+	Bloco falso
+
+
+.3.1: Estrutura Condicional If
+
+Avisos importantes:
+
+    A ordem das condições importa!
+        Se mais de uma condição estiver satisfeita, então as ações associadas à primeira condição satisfeita serão executadas e saltarão as demais condições e códigos.
+    "elif" = "else if"
+        "elif" expressa o mesmo significado que "else if"
+    Pelo menos uma condição DEVE ser prevista para ambas as cláusulas if e elif, senão ERROR!
+    Os parênteses para if e elif são opcionais. Seu código funcionará com ou sem o ().
+
+x = 7
+y = 14
+
+
+if (2*x == y):
+  print("y is double of x")
+elif (x**2 == y):
+  print("y is the squared of x")
+else:
+  print("y is NOT double of x")
+
+	
+If condição():
+	Bloco True
+else:
+	bloco False
+	
+tempo = int(input('Quantos anos tem seu carro?'))
+if tempo <=3:
+	print('carro novo')
+else:
+	print('carro velho')
+print('--FIM--')
+
+comandos sempre a esquerda são executados sempre
+indentados serão realizados um ou outro
+
+O programa nao faz nada durante o tempo
+
+and
+adiciona mais uma condição na linha do if
+or
+ou 
+
+20. Codigo ANSI e formatação
+formatar
+:s String
+:f float
+:d inteiro
+:.2f
+
+>esquerda
+<direita
+^centro
+num1 = 1
+print(f'{num1}0>10) preenche o numero com zeros a esquerda
+
+dentro do format pode chamar o indice do que adicionou
+nome = savio
+sobrenome = costa
+nomeformatado = '{1}'.format(nome, sobrenome) #acessa o sobrenome
+{1} #acessa o indice 1 do format
+
+nome = nome.ljust(10,#)
+
+
+\033[ PREENCHER  m
+
+\033[ Stylo texto back m
+
+\033[0:33:44m
+
+style
+0 sem estilo
+1 negrito
+4 sublinhar
+7 negativo
+
+texto:
+30 branco
+31 vermelho
+32 verde
+33
+34
+...
+
+background
+40 branco
+41 vermelho
+42 verde
+43
+44
+...
+
+\033[0:30:41m
+
+print('\033[31mOlá, Mundo')
+
+print('Os valores são \033[32m{}\033[m e \033[31m{}\33[m!!!'.format (a,b)) 
+
+21: condições aninhadas
+SE faça isso
+
+
+SENAO SE faça isso
+
+SENAO
+
+
+carro.siga()
+se carro.esquerda():
+
+senao se carro.direita():
+
+senao:
+
+Tres possibilidades
+if
+
+elif
+
+else
+
+Quatro possibilidades
+if
+elif
+elif
+else
+
+from random import randint
+itens = ('Pedra','Tesoura','Papel')
+computador = randint(0,2)
+print('O computador escolheu {}'.format(itens[computador]))
+
+
+22: FOR
+Estrutura de laço
+laço variavel de controle
+
+For
+	Indentação
+
+for c in range(1,10):
+	passo
+pega
+
+for c in range(1,10):
+	if condição:
+		faça isto
+	condição do for
+	condição
+comando final
+
+
+print('Oi')
+print('Oi')
+print('Oi')
+
+for c in range(1,6):
+	print('Oi')
+	
+for c in range(1, 6, -1): #LaçoContrario pra contar ao contrario
+    print(c)
+print('fim')
+
+for c in range(1, 6, ): #Pula de dois em dois
+    print(c)
+print('fim')	
+
+PS:
+LISTA:
+
+#lst=[]  #lista vazia
+#for c in range(1, 6):
+#    peso=float(input('Peso da {}ª pessoa: '.format(c)))
+#    lst+=[peso]   #adc os valores de peso na lista
+
+23 WHILE
+
+
+2.1.1: Loops For/While
+
+O Python tem uma implementação/estrutura do loop FOR que funciona tanto para o loop for padrão quanto para o loop for-Each de outras linguagens de programação.
+
+Existem algumas diferenças estruturais no loop FOR do Python. Considere-as nos exemplos abaixo.
+
+"""
+A variável **i** serve como o contador sobre RANGE de [0,10), 
+inclusive do limite inferior, mas exclusive do limite superior.
+
+O limite inferior de 0 NÃO precisa ser especificado;
+ele é implementado por padrão, a menos que outro limite inferior seja especificado.
+
+Também, por padrão, se NÃO existir um terceiro parâmetro para range(), 
+então **i** aumenta em 1. 
+"""
+for i in range(10):
+  print(i)
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+"""
+Estes exemplos especificam um limite inferior que difere do valor padrão de 0.
+
+A ordem do parâmetro é SEMPRE:
+ 1. Posição inicial, inclusive
+ 2. Posição de parada, exclusive
+ 3. Valor incremental
+
+
+Neste exemplo, x começa com o valor igual a 2 e para em 9 inclusive, ou seja, 10 exclusive, 
+com x acréscimos de 1 para cada iteração.
+"""
+for x in range(2, 10):
+  print(i)
+
+
+estrutura de repetição com teste logico
+enquanto
+	resto
+	
+while not X
+	resto
+
+se sabe o limite usa For
+se nao sabe o limite usa While
+se o While se torna falso, sai do laço
+
+par = impar = 0
+
+#r = 'S'
+#while r=='S':
+#    n = int(input('Digite um numero:'))
+#    r = str(input('Deseja continuar (S/N)?')).upper()
+#print('Fim')
+
+ impar += 1
+ 
+ #s = 'X'
+#while s == 'X':
+#    s = str(input('Digite o sexo da pessoa [M/F]:')).upper()
+#   if s == 'M' or s == 'F':
+#        print('Você digitou {}'.format(s))
+#        s = 'Y'
+#    else:
+#        s = 'X'
+#        print('Tente novamente')
+#print('Fim')
+
+#s = ''
+#while s != 'M' and s != 'F':
+#    s = str(input('Digite um sexo: [M/F] ').upper().strip())
+#   if s != 'F' and s != 'M':
+#       print('Favor digitar uma opção de sexo válida (M/F).')
+#    else:
+#        print('Você digitou {}.'.format(s))
+#print('Acabou')
+
+while not acertou:
+
+from random import randint
+from time import sleep
+computador = randint(0, 10)
+print('Sou seu computador...Acabei de pensar em um número entre 0 e 10.')
+print('Será que você consegue advinhar qual foi?')
+acertou = False
+palpites = 0
+while not acertou:
+    jogador = int(input('Qual seu palpite? '))
+    palpites += 1
+    if jogador == computador:
+        acertou = True
+    else:
+        if jogador < computador:
+            print('Tente um número maior!')
+        elif jogador > computador:
+            print('Tente um número menor!')
+print('Analisando...'), sleep(3)
+print('Você acertou com {} tentativas! Parabéns'.format(palpites)
+
+
+
+while true 
+	nome = input(''escreva seu nome'')
+	print(f'seu nome é {nome}')
+	
+#laço infinito	
+
+24. INTERROMPENDO WHILE
+comando: break
+
+print(f'A soma é {s}')
+
+print('Bem vinde ao programa TABUADA!')
+while True:
+    i = int(input('Digite o número que você para mostrar sua tabuada: '))
+    if i < 0 :
+        break
+    print(f''' Tabuada do {i}:
+{i:2} x 1 = {i*1}
+{i:2} x 2 = {i*2}
+{i:2} x 3 = {i*3}
+{i:2} x 4 = {i*4}
+{i:2} x 5 = {i*5}
+{i:2} x 6 = {i*6}
+{i:2} x 7 = {i*7}
+{i:2} x 8 = {i*8}
+{i:2} x 9 = {i*9}
+{i:2} x 10 = {i*10}''')
+print('Foi servido a TABUada bem QUEBRADO!')
+
+x = 0
+while x > 5:
+	continue   #ignora este laço
+	print(x)
+	x = x + 1
+	
+x = 0	
+while x < 10:
+	if x == 3:
+		x = x + 1
+		continue
+	x = x + 1
+	print(x)
+print('acabou')
+
+USE O DEBUGGER
+
+x = 0
+while x > 10:
+		y = 0 
+		while y < 5:
+			print(f'({x},{y})')
+			y += 1
+		x += 1
+	print('acabou')
+	
+if not num_1.isnumeric() or num2.isnumeric():
+	print('Digite um numero')
+	continue
+	
+while/else
+
+dá para usar else sem o if, no while
+
+string = 'o rato roeu a roupa do rei de roma.'
+tamanho = len(string)
+
+c = 0 
+while c < tamanho:
+	print(c,string[c])
+	c += 1
+	  
+	  
+string é imutavel
+
+minha_string = 'o rato roeu a roupa do rei de roma.'
+tamanho_string = len(minha_string)
+
+c = 0 
+nova_string=''
+while c < tamanho:
+	if minha_string[c] == 'r':
+		nova_string += minha_string[c].upper
+	else:
+		nova_string += minha string[c]
+	print(c,string[c])
+	c += 1
+	  
+print(nova_string)
+
+REFACTOR -> RENAME
+
+lista = ['A','B','C']
+lista[3] = 'outra coisa'
+
+25 LISTA
+append
+insert
+
+Lista
+
+Lista: uma estrutura de dados mutável que armazena elementos em um formato desordenado, como uma matriz.
+
+# Iniciar uma lista vazia
+list1 = []
+# OU
+list1 = list()
+
+# Iniciar uma lista com elementos
+list2 = ['hello', 'hola', 'olá']
+
+"""
+Os elementos da lista NÃO precisam ser do mesmo tipo, mas isto é incomum.
+Neste caso, cada lista poderia representar a série de informações sobre uma pessoa, 
+mas é preciso lembrar quais informações são armazenadas em cada index. ---> Existe uma opção melhor para este propósito - dicionário.
+"""
+list3 = ["John", "male", 20, False]
+
+
+
+lista = [0,1,2,3]
+lista.insert(0, 'novo valor')
+lista.pop()
+del(lista[2:4])
+
+l2 = range(0,100)
+l3 = list(l2)
+
+for letra_secreta in secreto:
+	if letra_secreta in digitadas:
+		secreto_temporario += letra_secreta
+	else:
+		secreto_temporario += '*'
+
+26 
+lista = [1,2,3,4,5]
+if 3 in lista:
+	print("3 esta na lista")
+	
+	
+pra adicionar
+append
+
+pra tirar
+del
+
+del list[2:4]
+sort
+descresente lista.sort(reverse=True)
+
+a = [float(input('Insira um número: ')) for i in range(0, 5)]
+print(f'Foram digitados {len(a)} números!')
+a.sort(reverse=True)
+print(f'Em ordem decrescente {a}')
+print(f'O valor 5{" " if  5 in a else " não"}está na lista')
+
+
+
+dados = list()
+dados.append('Pedro')
+dados.append('25)
+print(dados(1))
+
+LISTAS COMPOSTAS:
+
+
+pessoas = list()
+pessoas.append(dados[:])
+
+ex:
+pessoas = [[pedro,25],[sandra,33],[jhon,23]]
+
+print(pessoas[0][0])  ---> pedro
+
+
+teste = list()
+teste.append('Gustavo')
+teste.append(40)
+galera = list()
+galera.append(teste) ---> criou uma ligação ENTRE as listas
+teste[0] = 'Maria'
+teste[1] = 22
+galera append(teste)
+print(galera)
+
+
+teste = list()
+teste.append('Gustavo')
+teste.append(40)
+galera = list()
+galera.append(teste[:]) ---> COPIOU as listas
+teste[0] = 'Maria'
+teste[1] = 22
+galera append(teste[:])
+print(galera)
+
+galera = [['João',19],['Ana'22]]
+for p in galera:
+	print(f'{p[0]} tem {p[1]} anos')
+
+galera = list()
+dado = list()
+for c in range(0,3):
+	dado.append(str(input('Nome:')))
+	dado.append(int(input('Idade:')))
+	galera.append(dado[:])
+	dado.clear()
+print(galera)	
+	
+	
+galera = list()
+dado = list()
+for c in range(0,3):
+	dado.append(str(input('Nome:')))
+	dado.append(int(input('Idade:')))
+	galera.append(dado[:])
+	dado.clear()
+for p in galera:
+		if p[1] >= 21:
+			print(f'{p[0]} é maior de idade')
+		else:
+			print(f'{p[0]} é menor de idade')
+
+
+print(f'{pessoas[1][1]}')
+
+
+Lista - SLICE: 
+lista[ONDECOMEÇA:ONDETERMINA]
+
+----
+Tupla
+
+upla
+
+Tupla: "lista" imutável que não pode ser manipulada depois de criada.
+
+Elas suportam todas as listas de operações, exceto aquelas que modificam a lista.
+
+# Inicializar uma tupla vazia
+y = tuple()
+y
+
+# Criar uma nova tupla de elementos
+x = (1,2,3)
+
+# ERROR: não pode ser adicionado a uma tupla
+x.append(4)
+
+# Isto é OK porque está criando uma nova tupla com x e (4,5,6) adicionado no final
+x + (4,5,6)
+
+(1, 2, 3, 4, 5, 6)
+
+# x NÃO é modificado pela linha anterior
+x
+
+(1, 2, 3)
+
+# Declarar uma nova tupla, nome "person"
+person  = ('Jane','Doe', 21)
+
+# "Pacote"/associar cada elemento da tupla com uma etiqueta. Observe a ordem das etiquetas.
+first, last, age = person
+
+first
+
+'Jane'
+
+last
+
+'Doe'
+
+age
+
+21
+
+
+-----
+
+
+	
+27 dicionarios:
+
+Dicionário
+
+Dicionário: uma estrutura de dados que armazena pares de valores chave nos quais as chaves DEVEM ser objetos imutáveis.
+
+# Inicializar um dicionário vazio
+# O mesmo do conjunto, mas com:
+dict = {}
+
+# Declare um dicionário com pares de chaves/valores
+dict2 = {'a': 5, 'b': 10, 'c': 100, 'd': 9.5}
+
+# Acessar dados em um dicionário com uma chave
+dict2['b']
+
+10
+
+# Atualização do valor de uma chave existente
+dict2['b'] = 50
+
+dict2['b']
+
+
+indices literais - ou seja os indices são elementos e não numeros.
+
+insere entre chaves {}
+E os valores recebem um item
+{"A":"Ameixa", "B":"Bola", "C":"Cachorro"}
+dados = dict()
+dados={'nome':'Pedro'}
+print(dados['nome'])
+print 
+adicionar elementos no dicionario
+dados['sexo']=M
+
+deletar:
+del dados['sexo']
+
+
+para pegar valores chama a chave ["a"]
+
+for chave in dicionarios:
+	print(dicionario)
+	
+for chave in dicionario:
+	print('chave','+','dicionario')
+
+for i in meu_dicionario.itens():
+	print(i)
+
+values
+pega so os valores
+
+keys
+chaves
+
+
+print(filme.values())
+print(filme.keys())
+print(filme.items())
+
+for k,v in filme.items():
+	print(f'O (k) é (v)')
+
+pode criar uma lista com varios dicionarios dentro:
+print(locadora[0]['ano')]
+
+dic = {'lista':[1,2,3],'str':'ola'}
+dic['lista']
+
+lista[2] = 'eu'
+
+Funçao
+
+def minhafunc(parametros):
+	print(param)
+
+minhafunc('Olá')
+
+def minhafunc(parametros):
+	x = param ** 2
+	return x
+	
+
+-- 
+
+conjunto = {1,2,3,4,4,2}
+conjunto.add(5)
+conjunto.discard(2)
+print(conjunto)
+
+conjunto = {1,2,3,4,5}
+conjunto2 = {5,6,7,8}
+conjunto_uniao = conjunto.union(conjunto2)
+
+.union
+.intersection
+.difference
+.issubset
+
+---
+
+Metodo e função
+.2: Funções
+
+
+
+Funções são úteis quando lhe é dado um problema que pode ser dividido em várias etapas e algumas etapas são usadas de forma repetitiva. Então, ter uma função para essas etapas é conveniente porque reduz a repetição de código e torna o código mais organizado.
+
+Notas sobre a definição de uma nova função:
+
+    Definir/inicializar uma nova função com a palavra-chave def antes do nome da função.
+    NÃO definir o tipo de retorno na declaração da função.
+    NÃO esquecer do parâmetro da função se sua função precisar de informações do main() ou de outras funções.
+    A declaração RETURN não é necessária, dependendo das funções.
+
+"""
+Escreveremos nossa própria função que testa se um triângulo de 3 lados é um triângulo retângulo. 
+Como não podemos controlar a ordem dos lados que o usuário nos dá (de tal forma que C é o comprimento mais longo), 
+precisamos verificar manualmente se C é o comprimento mais longo (os comprimentos A e B podem estar em qualquer ordem). 
+Caso contrário, nosso teorema de Pitágoras falhará. 
+"""
+
+def BoasVindas():
+	print("Bem vindos")
+	
+BoasVindas()
+
+
+def Somar(num1,num2):
+	Soma = num1 + num2
+	print(soma)
+	
+soma(1,2)
+
+
+----
+Classe:
+	
+
+
+def isRightTriangle(a, b, c):
+
+  # Reatribuir valores variáveis para garantir que C seja o comprimento mais longo
+  if (max(a,b,c) != c):
+
+    # tmp armazena os valores anteriores de C, que não é o comprimento mais longo
+    tmp = c
+    c = max(a,b,c)
+
+    if a == c:
+      a = tmp
+    elif b == c:
+      b = tmp
+    
+
+  # Aplicar a fórmula
+  if a**2 + b**2 == c**2:
+    print("Right Triangle")
+
+    # Se o programa vê uma declaração Return, este é o FIM do programa/função
+    return True
+  
+  # Estas duas linhas funcionarão SOMENTE quando a condição IF for falsa
+  print("NOT a right triangle")
+  return False
+
+
+# Solicite ao usuário que insira 3 comprimentos
+def main():
+  a = input("Enter the length for the first edge of the triangle:")
+  b = input("Enter the length for the second edge of the triangle:")
+  c = input("Enter the length for the last edge of the triangle:")
+
+  # As entradas do usuário são armazenadas como uma string, então nós as computamos para ser int
+  return isRightTriangle(int(a), int(b), int(c))
+
+if __name__ == "__main__":
+    main()
+
+Enter the length for the first edge of the triangle:5
+Enter the length for the second edge of the triangle:4
+Enter the length for the last edge of the triangle:3
+Right Triangle
+
+"""
+Outro exemplo: determinar se a entrada do usuário é um palíndromo. 
+
+Palíndromo: se uma palavra/sentença é soletrada da mesma maneira quando é invertida. 
+  EX: racecar (carro de corrida)
+
+Para este exemplo, vamos tornar isto de forma mais abrangente. 
+Em vez de verificar se uma palavra é um palíndromo, vamos testar se uma frase é um palíndromo. 
+
+A fim de escrever este programa, estabeleceremos algumas especificações:
+  - Tratar as letras maiúsculas como minúsculas
+  - Ignorar todos os espaços brancos e pontuações
+  - Uma sentença/string vazia é considerada como um palíndromo. 
+"""
+
+# importar o pacote de string
+# Revisaremos mais pacotes/bibliotecas no Módulo 5
+import string
+
+
+# Esta implementação da função RETURN (retornar) um valor booleano, True/False (Verdadeiro/Falso)
+def isPalindrome(str):
+
+   # Como não conseguimos controlar o que o usuário insere na sentença, vamos esclarecer primeiro a sentença.
+   # Vamos remover todas as pontuações e espaços brancos da sentença e colocar todas as letras em minúsculo 
+   exclude = set(string.punctuation)
+   str = ''.join(ch for ch in str if ch not in exclude)
+   str = str.replace(" ", "").lower()
+
+ # Comparar a string original com a string em ordem inversa
+    # Observação de str[::-1]: os dois primeiros números definem o início e o fim da string, o último número de -1 indica a ordem inversa
+
+  # Verificar se a string é a mesma tanto em ordem invertida quanto na ordem original
+  if str == str[::-1]:
+    return True
+  else:
+    return False
+
+# Solicitar ao usuário que introduza a sentença
+def main():
+  userSentence = input("Enter a sentence to be tested as a palindrome:")
+
+  if (isPalindrome(userSentence)):
+    print(userSentence + " is a palindrome!")
+  else:
+    print(userSentence + " is NOT a palindrome!")
+
+if __name__ == "__main__":
+    main()
+
+Enter a sentence to be tested as a palindrome:racecar
+racecar is a palindrome!
+
+# Considere esta implementação da função que RETURN (retorna) uma string.
+# Anote a diferença entre main() e isPalindrom() após esta mudança. 
+
+import string
+
+def isPalindrome(str):
+  exclude = set(string.punctuation)
+  str = ''.join(ch for ch in str if ch not in exclude)
+  str = str.replace(" ", "").lower()
+  if str == str[::-1]:
+    return str + " is a palindrome!"
+  else:
+    return str + " is NOT a palindrome!"
+
+def main():
+  userSentence = input("Enter a sentence to be tested as a palindrome:")
+  print(isPalindrome(userSentence))
+
+if __name__ == "__main__":
+    main()
+
+"""
+Acima trabalhamos com um exemplo que testa se uma sentença é um palíndromo. 
+Agora é a sua vez.
+
+Exercício: escreva uma função para testar se uma palavra do usuário é um palíndromo. 
+
+As declarações de função são fornecidas para você.
+"""
+
+def isPalindrome(str):
+  
+
+
+# Solicitar que o usuário digite a sentença
+def main():
+  userInput = input("Enter a WORD to be tested as a palindrome:")
+
+  if (isPalindrome(userInput)):
+    print(userInput + " is a palindrome!")
+  else:
+    print(userInput + " is NOT a palindrome!")
+
+if __name__ == "__main__":
+    main()
+
+
+
+def isPalindrome(str):
+  str = str.lower()
+  if (str == str[::-1]):
+    return True
+  else:
+    return False
+
+
+# Solicitar ao usuário que introduza a sentença
+def main():
+  userInput = input("Enter a WORD to be tested as a palindrome:")
+
+  if (isPalindrome(userInput)):
+    print(userInput + " is a palindrome!")
+  else:
+    print(userInput + " is NOT a palindrome!")
+    
+if __name__ == "__main__":
+    main()
+
+Enter a WORD to be tested as a palindrome:racecar
+racecar is a palindrome!
+
+
+
+
+
+Metodo não retorna valor
+Função retorna valor
+
+metodo se define com 'def'
+
+criar Class é com letra maiuscula
+
+calculadora = Calculadora() #estanciar
+
+if condição: #escrever assim assume que o if é True
+
+-----
+Modulos e funcoes anonimas
+
+import "comando" #roda todos os comandos
+
+
+if __name__ == '__main__':
+Só executa se o nome do comando pra rodar o arquivo for o nome do proprio arquivo
+
+from contadorletra import contador
+
+lamda(função anonima)
+soma = lambda a,b: a + b
+print(soma(5,10))
+
+
+-------
+
+Gere, copie, mova, escreva e leia informações de arquivos externos
+open('Teste', 'w')
+#W é par escrever o arquivo
+
+open('Teste', 'a')
+#A atualiza o arquivo já existente
+
+if __name__ == '__main__':
+    #escrever_arquivo('Primeira linha.\n')
+    atualizar_arquivo('Segunda linha\n')
+	
+def ler_arquivo(nome_arquivo):
+    arquivo = open(nome_arquivo,'r')
+	
+#Apenas leitura do arquivo
+
+
+copiar
+#def copia_arquivo(nome_arquivo):
+#    import shutil
+#    shutil.copy(nome_arquivo,'C:Diretorio')
+
+-----
+
+Aprenda a utilizar informações de data, horário e relacionar datas diferentes
+
+from datetime import date
+data_atual = date.today()
+print(data_atual)
+print(data_atual.strftime('%d/%m/%y'))#data mes e ano
+-----
+Introdução à programação com Python
+Gerenciando e criando exceções customizadas com try, except, else e finally
+
+try:
+    divisão = 10/0
+	
+#tratamento de exceção
+
+try:
+    divisão = 10 / 0
+except ZeroDivisionError:
+    print('Não é possivel realizar divisão por zero')
+
+else:
+    print('Executou, pois sem erros')
+finally:
+    print('Sempre executa')
+    print('Fechando arquivo')
+    arquivo.close()
+	
+	
+class Error(Exception):
+    pass
+
+class InputError(Error):
+    def __init__(self,message):
+        self.message = message
+		
+
+
+-----
+Módulo 4: Programação Orientada à Objetos
+Classes são plantas, desenhos ou modelos para instâncias. A relação entre uma classe e uma instância é semelhante àquela entre um cortador de biscoitos e um biscoito.
+
+    Um único cortador de biscoitos pode fazer quantos biscoitos forem necessários. O cortador define a forma do biscoito.
+    Os biscoitos são comestíveis, mas o cortador de biscoitos não é.
+
+Referências das palestras do professor Daniel Bauer ENGI1006 da Universidade de Columbia.
+
+Por que usar classes e quando usá-las?
+
+Os objetos simplificam os problemas, fornecendo uma abstração sobre certos tipos de dados e sua funcionalidade.
+
+    Em vez de pensar no problema em termos de cadeias de caracteres individuais, inteiros, etc., podemos agora pensar em termos de LibraryBooks (ou outros objetos).
+
+Encapsulação
+
+    Os dados e a funcionalidade são agrupados em objetos.
+    Os métodos fornecem uma interface para o objeto. O ideal é que os dados individuais sejam apenas escritos e lidos através de métodos.
+    Isto significa que os detalhes sobre como a funcionalidade é implementada são escondidos do programador. Por exemplo, não sabemos como o método de anexar em listas é implementado.
+    Esta ideia permite que as classes sejam compartilhadas (em bibliotecas) e usadas por outros (ou reutilizadas por você) sem a necessidade de ler o código fonte da classe.
+
+
+
+Campos de dados - Cada instância possui seus próprios dados (a classe pode definir quais nomes os campos de dados têm).
+
+O método init(self, ...) é automaticamente executado por Python quando uma nova instância é criada. Este método é chamado de construtor de classe; ele inicializa os valores dos dados na classe.
+
+
+"""
+    Um livro da biblioteca.
+    """
+    class LibraryBook (object):   
+
+      """
+      O parâmetro self é OBRIGATÓRIO dentro da classe, 
+      porque ele diz ao programa para buscar/atuar sobre o objeto de instância
+      que a executou.
+      """  
+      def __init__(self, title, author, pub_year, call_no):
+          self.title = title
+          self.author = author
+          self.year = pub_year
+          self.call_number = call_no
+          self.checked_out = False
+
+"""
+Como já criamos meu_livro como um objeto do LibraryBook,
+agora podemos adicionar manualmente o título, autor,... informações associadas ao livro.
+"""
+
+my_book.title = "Harry Potter and the Philosopher's Stone"
+my_book.author = ('Rowling', 'J.K.')
+my_book.year = 1998
+my_book.call_number = "PZ7.R79835"
+
+# Busque um campo de dados específico de uma instância executando o nome da instância e o nome do campo
+my_book.author
+
+('Rowling', 'J.K.')
+
+"""
+Ou podemos passar todas as informações para o __init__ para configurar os campos 
+ao criar a nova instância.
+"""
+CLASSES:
+
+
+
+new_book = LibraryBook("Harry Potter and the Sorcerer's Stone", 
+                       ("Rowling","J.K."), 1998, "PZ7.R79835")
+
+new_book.author
+
+
+class Fish(Vertebrate):
+
+    # self.name não é definido na classe Fish, mas é definido na classe ClownFish.
+    def __str__(self):
+        return "Hello, my name is {}".format(self.name)
+    
+class ClownFish(Fish):
+    def __init__(self, name):
+        self.name = name
+
+nemo = ClownFish("nemo")
+
+# O atributo self.name para __str__() é da classe ClownFish
+# mas __str__() é da classe Fish
+print(nemo)
+
+Hello, my name is nemo
+
+
+
+class Pessoa
+	#construtor
+	def __init__(self, Nome, Idade):
+		self.Nome = Nome
+		self.Idade = Idade
+	#funções
+		def Boas_Vindas(self)
+			print('Ola', self.Nome)
+			
+	def Maior_Idade(self):
+		if self.Idade >= 18:
+			print('de maior')
+		else:
+			print('de menor')
+		
+		
+	
+	
+
+-----
+Análise de dados com Numpy, Matplotlib, Scipy
+
+Numpy é um pacote para computação numérica em Python.
+
+    Fornece uma estrutura de dados eficiente para matrizes numéricas, n-dimensionais (ndarray)
+    Suporta operações vetoriais e matriciais.
+    O Numpy é implementado em C, portanto é realmente rápido e eficiente.
+
+O formato básico de dados em Numpy é a matriz n-dimensional. Estas podem ser usadas para representar vetores (1D), matrizes (2D) ou tensores (nD).
+
+    Uma matriz numérica de uma dimensão é frequentemente usada para representar uma série de dados.
+    As matrizes n-dimensionais muitas vezes representam conjuntos completos de dados (cada coluna é um tipo de medida).
+
+    As matrizes numéricas são muito parecidas com as listas de Python. A indexação e o fatiamento funcionam da mesma forma (incluindo atribuições). No entanto, todas as células de uma mesma matriz devem conter o mesmo tipo de dados.
+
+Os operadores não trabalham da mesma forma para listas e matrizes e há muitos métodos adicionais definidos nelas.
+
+Referenciado pelo professor Daniel Bauer da Universidade de Columbia CS, Palestra ENGI1006
+
+# Vamos ver o que acontece se usarmos uma lista para representar um vetor?
+[1,2,3] * 3
+
+[1, 2, 3, 1, 2, 3, 1, 2, 3]
+
+# Anteriormente, NÃO foi o resultado esperado com multiplicação vetorial por um escalar
+
+# É preciso fazer isto
+[i*3 for i in [1,2,3]]
+
+[3, 6, 9]
+
+# E quanto à soma de dois vetores?
+
+# Tratado como concatenação de lista
+[1,2,3]+[4,5,6]
+
+[1, 2, 3, 4, 5, 6]
+
+# Soma de dois vetores
+a = [1,2,3]
+b = [4,5,6]
+[a[i] + b[i] for i in range(len(a))]
+
+[5, 7, 9]
+
+# Produto vetorial ou produto escalar?
+[1,2,3] * [4,5,6]
+
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-6-a661702feff9> in <module>()
+      1 # cross product or dot product?
+----> 2 [1,2,3] * [4,5,6]
+
+TypeError: can't multiply sequence by non-int of type 'list'
+
+# Poderíamos calcular o produto escalar assim: 
+
+u = [1,2,3]
+v = [4,5,6]
+
+total = 0 
+for i in range(len(u)):
+    total += u[i] * v[i]
+total
+
+32
+
+# Vamos ver o que acontece se usarmos Numpy
+
+# np é uma convenção comum para se referir a Numpy ao longo de todo o código
+import numpy as np 
+u = np.array([1,2,3])
+v = np.array([4,5,6])
+
+# dot() calcula o produto escalar de dois vetores
+np.dot(u,v)
+
+32
+
+type(u)
+
+numpy.ndarray
+
+print(u)
+
+[1 2 3]
+
+# Mais algumas operações em matrizes 1D:
+
+import numpy as np
+u = np.array([1,2,3])
+v = np.array([4,5,6])
+
+print("Vector addition with another vector ---> " + str(u+v))
+print("Vector addition with a scalar ---> " + str(u+4))
+print("Vector multiplication by a scalar ---> " + str(u * 4))
+print("Vector multiplication (NOT dot nor cross product) ---> " + str(u * v))
+print("Vector sum ---> " + str(np.sum(u * v)))
+print("Dot product ---> " + str(np.dot(u,v)))
+
+Vector addition with another vector ---> [5 7 9]
+Vector addition with a scalar ---> [5 6 7]
+Vector multiplication by a scalar ---> [ 4  8 12]
+Vector multiplication (NOT dot nor cross product) ---> [ 4 10 18]
+Vector sum ---> 32
+Dot product ---> 32
+
+"""
+Vejamos as matrizes multidimensionais: 'matrizes dentro de matrizes'.
+
+O seguinte código cria um total de três matrizes 3*3 com todas elas
+"""
+u = np.ones((3,3,3))
+u
+
+array([[[1., 1., 1.],
+        [1., 1., 1.],
+        [1., 1., 1.]],
+
+       [[1., 1., 1.],
+        [1., 1., 1.],
+        [1., 1., 1.]],
+
+       [[1., 1., 1.],
+        [1., 1., 1.],
+        [1., 1., 1.]]])
+
+# Retornar a forma/dimensão da matriz
+u.shape
+
+(3, 3, 3)
+
+np.ones((2,3))
+
+array([[1., 1., 1.],
+       [1., 1., 1.]])
+
+np.ones((3, 2))
+
+array([[1., 1.],
+       [1., 1.],
+       [1., 1.]])
+
+Scipy é um pacote para analisar o ajuste da curva.
+
+Matplotlib é um pacote para dados gráficos.
+
+Veja a seguir um exemplo de como o Scipy, o Numpy e o Matplotlib poderiam ser usados juntos na análise de dados.
+
+Documentações para Scipy, Matplotlib e Numpy podem ser acessadas AQUI.
+
+# Importar diferentes pacotes usados para análise de dados
+# ... "as opt" significa que o programador poderia usar a abreviatura de "opt" para se referir a esta biblioteca, em vez de digitar o nome completo
+import scipy.optimize as opt
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+# Dados brutos inseridos manualmente pelo usuário
+I =[4.0, 3.5, 3.0, 2.5, 2.0]
+B =[1.31, 1.14, 0.97 ,0.81, 0.76]
+IError = [0.2, 0.2, 0.2, 0.2, 0.2]
+BError = [0.03, 0.02, 0.04, 0.02, 0.05]
+
+print("estimated B for each error \n")
+for i in range (5) :
+  print(str(I[i]) + "+-" + str(IError[i]) + ": " + str(B[i]) + "+-" + str(BError[i]))
+  
+# Aplicar a biblioteca Numpy para formatar a lista de dados brutos em uma matriz multidimensional
+ # Isto é necessário para a otimização das funções e para o uso adequado do pacote Scipy
+xdata = np.array(I)
+ydata = np.array(B)
+xerror = np.array(IError)
+yerror= np.array(BError)
+
+# Definir função linear para ajuste
+def func(h, m, b):
+    return m*h + b
+
+
+# w dá o parâmetro estimado para m e b, armazenado na matriz quadrada de w e u
+# A informação que falta _ retornar sobre variância e covariância
+
+# w é uma matriz com informações sobre o valor da inclinação e do y-intercepção
+w, u = opt.curve_fit(func, xdata, ydata) 
+
+# Aplicar coordenadas x e resultado otimizado sobre o ajuste da curva para encontrar a "Linha do Melhor Ajuste".
+yfit = func(xdata,*w)
+    
+# Use o pacote Matplotlib para fazer gráficos de dados
+  # 1. Gráfico das barras de erro para cada valor x 
+  # 2. Gráfico da "Linha do Melhor Ajuste"
+
+# Nota: há opções para personalizar o visual de seu gráfico com diferentes parâmetros
+plt.errorbar(I, B, xerr=IError, yerr = BError, fmt='o', ms = 3)
+plt.plot(xdata,yfit,label="Fit", linewidth=1.5, linestyle='dashed')
+
+# Adicionar título e etiquetas ao gráfico
+plt.title('I vs. B of the Electromagnet')
+plt.xlabel('Electromagnet Current I (A)')
+plt.ylabel('Magnetic Field B (T)')
+
+
+print("\n Estimated parameters of m and b: ", w)
+print("\n Estimated variance of m & b: ", np.sqrt(np.diag(u)))
+
+# Se necessário, é assim que você poderia salvar o gráfico em sua máquina local.  
+# Mas aqui NÃO precisamos salvar o gráfico, por isso comentaremos esta linha. 
+
+# Especifique o nome da imagem como o parâmetro
+### plt.savefig('IvsB.jpg')
+
+# Nota: se você estiver mostrando e armazenando o gráfico, certifique-se de SALVAR antes de PROJETAR.
+plt.show()
+
+
+""" 
+
+
+# Vamos ver o que acontece se usarmos uma lista para representar um vetor?
+[1,2,3] * 3
+
+[1, 2, 3, 1, 2, 3, 1, 2, 3]
+
+# Anteriormente, NÃO foi o resultado esperado com multiplicação vetorial por um escalar
+
+# É preciso fazer isto
+[i*3 for i in [1,2,3]]
+
+[3, 6, 9]
+
+# E quanto à soma de dois vetores?
+
+# Tratado como concatenação de lista
+[1,2,3]+[4,5,6]
+
+[1, 2, 3, 4, 5, 6]
+
+# Soma de dois vetores
+a = [1,2,3]
+b = [4,5,6]
+[a[i] + b[i] for i in range(len(a))]
+
+
+# Produto vetorial ou produto escalar?
+[1,2,3] * [4,5,6]
+
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-6-a661702feff9> in <module>()
+      1 # cross product or dot product?
+----> 2 [1,2,3] * [4,5,6]
+
+TypeError: can't multiply sequence by non-int of type 'list'
+
+# Poderíamos calcular o produto escalar assim: 
+
+u = [1,2,3]
+v = [4,5,6]
+
+total = 0 
+for i in range(len(u)):
+    total += u[i] * v[i]
+total
+
